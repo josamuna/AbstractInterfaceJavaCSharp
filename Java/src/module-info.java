@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Josamuna
+ *
+ */
+module singletonJava {
+}

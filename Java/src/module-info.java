@@ -6,4 +6,5 @@
  *
  */
 module singletonJava {
+	requires java.sql;
 }

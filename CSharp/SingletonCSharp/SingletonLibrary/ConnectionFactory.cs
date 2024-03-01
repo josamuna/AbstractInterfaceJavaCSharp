@@ -41,7 +41,7 @@ namespace SingletonLibrary
 
         private static IDbConnection createSQLServerConnection()
         {
-            String strCon = formatSQLServerConnectionString(new Connect("LOCALHOST\\SQLEXPRESS", "db_person", "sa", "password"));
+            String strCon = formatSQLServerConnectionString(new Connect("LOCALHOST\\SQLEXPRESS", "db_person", "sa", "isig"));
             return new SqlConnection(strCon);
         }
 

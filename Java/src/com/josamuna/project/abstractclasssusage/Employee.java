@@ -49,7 +49,7 @@ public class Employee extends Person {
 
 	@Override
 	public void showDynamicIdentity(int id) throws SQLException {
-		String sqlQuery = "Select employee.id, employee.firstname, employee.lastname, employee.cnss FROM employee WHERE employee.id=?";
+		String sqlQuery = "SELECT employee.id, employee.firstname, employee.lastname, employee.cnss FROM employee WHERE employee.id=?";
 		// Usage of try-with-resources statement to unsure that JDBC resources are
 		// properly closed
 		try (PreparedStatement ps = ConnectionFactory.getConnection(ConnectionFactory.MYSQL_CONNECTION)

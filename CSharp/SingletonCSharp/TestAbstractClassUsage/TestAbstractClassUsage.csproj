@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3BDEE900-092D-4FB2-B32A-D24224104876}</ProjectGuid>
+    <ProjectGuid>{A4320268-40F3-4594-AC6F-604BF10CD6C7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SingletonCSharp</RootNamespace>
-    <AssemblyName>SingletonCSharp</AssemblyName>
+    <RootNamespace>TestAbstractClassUsage</RootNamespace>
+    <AssemblyName>TestAbstractClassUsage</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,14 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\ProjetUltraManage\ManageConnection\bin\Release\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -48,6 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractClassUsage\AbstractClassUsage.csproj">
+      <Project>{d8b56a71-44b8-44b2-b284-3616be88b4f7}</Project>
+      <Name>AbstractClassUsage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SingletonLibrary\SingletonLibrary.csproj">
+      <Project>{0cd71e44-7d1d-41ec-bf4f-6ae608936951}</Project>
+      <Name>SingletonLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

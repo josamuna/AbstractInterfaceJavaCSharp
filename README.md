@@ -13,7 +13,7 @@
 
 ###$ Java Programming Language
   - The used IDE is *Eclipse IDE for Enterprise Java Developers. Version: 2019-09 R (4.13.0)*, but the same project could also work with *NetBeans* or another IDE.
-  - The two drivers jar files (*For MySQL* and for SQLServer-
+  - The two drivers jar files (*For MySQL* and for SQLServer): Inside *Java/drivers* folder.
   - Then Test each code's package separately.
 
 #### C# Programming language
